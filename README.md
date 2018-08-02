@@ -36,6 +36,10 @@ This package provides Lifion's base JS .eslintrc as an extensible shared config.
 
 2. Add `"extends": "lifion"` to your .eslintrc
 
+3. Make sure to also cover JSON files when running ESLint: `eslint --ext .js,.json .`
+
+4. [Configure prettier](https://prettier.io/docs/en/configuration.html) with: `--print-width 100 --single-quote`
+
 ## License
 
 [MIT](LICENSE)
