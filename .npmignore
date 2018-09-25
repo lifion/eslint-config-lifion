@@ -1,0 +1,7 @@
+*.test.js
+/.circleci
+/.eslintcache
+/.eslintignore
+/.nvmrc
+/reports
+/templates
