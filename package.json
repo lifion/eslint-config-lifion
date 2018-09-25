@@ -36,12 +36,12 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^2.10.0",
     "eslint-plugin-es6-recommended": "^0.1.2",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jest": "^21.18.0",
-    "eslint-plugin-jsdoc": "^3.7.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
+    "eslint-plugin-jsdoc": "^3.8.0",
     "eslint-plugin-json": "^1.2.1",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-prettier": "^2.6.2",
@@ -49,15 +49,8 @@
     "eslint-plugin-unicorn": "^4.0.3"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^4.19.1 || ^5.3.0",
     "prettier": "^1.14.0"
-  },
-  "auto-changelog": {
-    "commitLimit": false,
-    "template": "./templates/changelog-template.hbs"
-  },
-  "eslintConfig": {
-    "extends": "./lib/index.js"
   },
   "devDependencies": {
     "auto-changelog": "^1.8.0",
@@ -66,6 +59,13 @@
     "jest": "^23.6.0",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3"
+  },
+  "auto-changelog": {
+    "commitLimit": false,
+    "template": "./templates/changelog-template.hbs"
+  },
+  "eslintConfig": {
+    "extends": "./lib/index.js"
   },
   "jest": {
     "collectCoverage": true,
