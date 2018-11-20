@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lifion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lifion's ESLint config",
   "repository": {
     "type": "git",
@@ -36,31 +36,31 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.24.1",
-    "eslint-plugin-jsdoc": "^3.8.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-jsdoc": "^3.9.1",
     "eslint-plugin-json-light": "^1.0.3",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^6.0.1"
   },
   "peerDependencies": {
     "eslint": "^4.19.1 || ^5.3.0",
-    "prettier": "^1.14.3"
+    "prettier": "^1.15.2"
   },
   "devDependencies": {
-    "auto-changelog": "^1.8.1",
+    "auto-changelog": "^1.10.2",
     "check-engines": "^1.5.0",
     "codecov": "^3.1.0",
-    "eslint": "^5.6.1",
-    "husky": "^1.1.1",
+    "eslint": "^5.9.0",
+    "husky": "^1.1.4",
     "jest": "^23.6.0",
     "jest-junit": "^5.2.0",
-    "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3"
+    "lint-staged": "^8.0.5",
+    "prettier": "^1.15.2"
   },
   "auto-changelog": {
     "commitLimit": false,
