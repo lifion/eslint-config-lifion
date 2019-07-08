@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lifion",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Lifion's ESLint config",
   "repository": {
     "type": "git",
@@ -10,6 +10,7 @@
     "config",
     "eslint",
     "eslintconfig",
+    "eslintrc",
     "javascript",
     "lifion",
     "styleguide"
@@ -25,43 +26,40 @@
     "node": ">=8.6.0"
   },
   "scripts": {
-    "eslint": "eslint . --ext .js,.json --cache",
-    "format": "prettier --write '**/*.{md,js,json}' '!reports/**/*.{js,json}'",
-    "jest": "JEST_JUNIT_OUTPUT=./reports/junit/js-test-results.xml jest",
-    "jest-watch": "npm run jest -- --watch --coverageReporters=html",
-    "lint": "eslint . --ext .js,.json --format junit -o ./reports/junit/js-lint-results.xml",
+    "eslint": "eslint . --ext .js,.json",
+    "format": "prettier --write '**/*.{md,js,json}' '!coverage/**/*.{js,json}'",
     "prepare": "check-engines",
-    "test": "npm run jest -- --ci --runInBand && codecov",
+    "test": "jest --ci --runInBand && codecov",
+    "test-watch": "jest --watchAll --coverageReporters=html",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jest": "^22.7.1",
-    "eslint-plugin-jsdoc": "^10.0.0",
+    "eslint-plugin-jest": "^22.7.2",
+    "eslint-plugin-jsdoc": "^15.2.0",
     "eslint-plugin-json-light": "^1.0.3",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-sort-destructure-keys": "^1.3.0",
+    "eslint-plugin-sort-destructure-keys": "^1.3.2",
     "eslint-plugin-sort-keys-fix": "^1.0.1",
     "eslint-plugin-unicorn": "^9.1.1"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1 || ^5.3.0 || ^6.0.0",
-    "prettier": "^1.18.2"
+    "eslint": "^4.19.1 || ^5.3.0",
+    "prettier": "^1.13.0"
   },
   "devDependencies": {
-    "auto-changelog": "^1.13.0",
+    "auto-changelog": "^1.14.1",
     "check-engines": "^1.5.0",
     "codecov": "^3.5.0",
-    "eslint": "^6.0.1",
-    "husky": "^2.7.0",
+    "eslint": "^5.16.0",
+    "husky": "^3.0.0",
     "jest": "^24.8.0",
-    "jest-junit": "^6.4.0",
-    "lint-staged": "^8.2.1",
+    "lint-staged": "^9.1.0",
     "prettier": "^1.18.2"
   },
   "auto-changelog": {
@@ -81,7 +79,7 @@
     "collectCoverageFrom": [
       "**/*.js"
     ],
-    "coverageDirectory": "../reports/coverage",
+    "coverageDirectory": "../coverage",
     "coverageThreshold": {
       "global": {
         "statements": 100,
@@ -90,10 +88,6 @@
         "lines": 100
       }
     },
-    "reporters": [
-      "default",
-      "jest-junit"
-    ],
     "rootDir": "lib",
     "testEnvironment": "node"
   },

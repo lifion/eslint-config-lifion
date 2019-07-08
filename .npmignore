@@ -1,7 +1,5 @@
 *.test.js
-/.circleci
-/.eslintcache
-/.eslintignore
-/.nvmrc
-/reports
+/.*
+/coverage
 /templates
+__mocks__
