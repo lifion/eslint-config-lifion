@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lifion",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Lifion's ESLint config",
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jest": "^22.7.2",
-    "eslint-plugin-jsdoc": "^15.3.2",
+    "eslint-plugin-jsdoc": "^15.3.4",
     "eslint-plugin-json-light": "^1.0.3",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
@@ -59,7 +59,7 @@
     "eslint": "^5.16.0",
     "husky": "^3.0.0",
     "jest": "^24.8.0",
-    "lint-staged": "^9.1.0",
+    "lint-staged": "^9.2.0",
     "prettier": "^1.18.2"
   },
   "auto-changelog": {
