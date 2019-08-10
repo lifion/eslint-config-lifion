@@ -34,7 +34,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.18.2",
