@@ -16,13 +16,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v1
         with:
           version: ${{ matrix.node_version }}
-        - name: npm install, lint and test
-          - run: npm ci
-          - run: npm run eslint
-          - run: npm test
-            env:
-              CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+        
+      - name: npm install, lint and test
+      - run: npm ci
+      - run: npm run eslint
+      - run: npm test
+        env:
+          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
