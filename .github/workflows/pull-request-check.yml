@@ -15,16 +15,18 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
-      - name: Cloning repo
+      - name: Clone Repo
         uses: actions/checkout@v1
-      - name: Using Node.js ${{ matrix.node_version }}
+      - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           version: ${{ matrix.node_version }}
-      - name: npm ci, lint, and test
-        run: |
-          npm ci
-          npm run eslint
-          npm test
+        run: npm --version
+      - name: Install
+        run: npm ci
+      - name: Lint
+        run: npm run eslint
+      - name: Test
+        run: npm test
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
