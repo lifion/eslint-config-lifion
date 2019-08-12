@@ -37,6 +37,6 @@ jobs:
       - name: Install
         run: npm ci
       - name: Publish
-        run: npm publish --verbose
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
