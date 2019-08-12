@@ -33,10 +33,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           version: 10
-          registry-url: https://registry.npmjs.org/
       - name: Install
         run: npm ci
       - name: Publish
-        run: npm publish
+        run: npm publish --verbose
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
