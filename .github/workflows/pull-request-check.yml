@@ -23,8 +23,9 @@ jobs:
           version: ${{ matrix.node_version }}
         
       - name: npm install, lint and test
-      - run: npm ci
-      - run: npm run eslint
-      - run: npm test
+        run: |
+          npm ci
+          npm run eslint
+          npm test
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
