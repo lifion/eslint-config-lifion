@@ -25,7 +25,7 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run eslint
-      - name: Test
+      - name: Tests
         run: npm test
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
