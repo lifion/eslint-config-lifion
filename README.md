@@ -6,39 +6,30 @@ This package provides Lifion's base JS .eslintrc as an extensible shared config.
 
 ## Usage
 
-1. Install the correct versions of each package, which are listed by the command:
+Install the module and its peer dependencies:
 
 ```sh
-npm info "eslint-config-lifion@latest" peerDependencies
+npm install eslint-config-lifion eslint prettier -D
 ```
 
-If using **npm 5+**, use this shortcut
+Make sure ESLint uses this module by adding "extends" to your `.eslintrc` file:
 
-```sh
-npx install-peerdeps --dev eslint-config-lifion
+```json
+{
+  "extends": "lifion"
+}
 ```
 
-If using **npm < 5**, Linux/OSX users can run
+Configure Prettier by adding this to your `.prettierrc` file:
 
-```sh
-(
-  export PKG=eslint-config-lifion;
-  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-)
+```json
+{
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true
+  }
+}
 ```
-
-If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-```sh
-npm install -g install-peerdeps
-install-peerdeps --dev eslint-config-lifion
-```
-
-2. Add `"extends": "lifion"` to your .eslintrc
-
-3. Make sure to also cover JSON files when running ESLint: `eslint --ext .js,.json .`
-
-4. [Configure prettier](https://prettier.io/docs/en/configuration.html) with: `--print-width 100 --single-quote`
 
 ## License
 
