@@ -1,5 +1,8 @@
 name: Pull Request Check
 on:
+  push:
+    branches:
+      - develop
   pull_request:
     branches:
       - develop
@@ -19,10 +22,13 @@ jobs:
         with:
           version: ${{ matrix.node_version }}
       - name: Install
-        run: npm ci
+        run: npm ci --loglevel=error
+        env:
+          DISABLE_OPENCOLLECTIVE: true
       - name: Run linter
         run: npm run eslint
       - name: Run tests
         run: npm test
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+          CI: true
