@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lifion/eslint-config-lifion.git"
+    "url": "https://github.com/lifion/eslint-config-lifion.git"
   },
   "bugs": {
     "url": "https://github.com/lifion/eslint-config-lifion/issues"
@@ -78,7 +78,7 @@
   "@lifion/core-commons": {
     "autoDocs": false,
     "template": "public",
-    "updated": "2019-08-26T23:41:20.226Z",
+    "updated": "2019-08-27T00:10:29.815Z",
     "version": "2.3.3"
   }
 }
