@@ -24,10 +24,8 @@ Configure Prettier by adding this to your `.prettierrc` file:
 
 ```json
 {
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true
-  }
+  "printWidth": 100,
+  "singleQuote": true
 }
 ```
 
