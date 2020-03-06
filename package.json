@@ -44,7 +44,7 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsdoc": "^21.0.0",
     "eslint-plugin-json-light": "^1.0.3",
     "eslint-plugin-node": "^11.0.0",
