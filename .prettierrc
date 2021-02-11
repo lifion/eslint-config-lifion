@@ -1,4 +1,7 @@
 {
+  "endOfLine": "auto",
+  "overrides": [{ "files": "*.hbs", "options": { "parser": "markdown" } }],
   "printWidth": 100,
-  "singleQuote": true
+  "singleQuote": true,
+  "trailingComma": "none"
 }

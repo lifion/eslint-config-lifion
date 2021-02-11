@@ -9,7 +9,7 @@ This package provides Lifion's base JS .eslintrc as an extensible shared config.
 Install the module and its peer dependencies:
 
 ```sh
-npm install eslint-config-lifion eslint prettier -D
+npm install eslint-config-lifion eslint@7 prettier@2 -D
 ```
 
 Make sure ESLint uses this module by adding "extends" to your `.eslintrc` file:
@@ -24,8 +24,10 @@ Configure Prettier by adding this to your `.prettierrc` file:
 
 ```json
 {
+  "endOfLine": "auto",
   "printWidth": 100,
-  "singleQuote": true
+  "singleQuote": true,
+  "trailingComma": "none"
 }
 ```
 
