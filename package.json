@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lifion",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Lifion's ESLint config",
   "keywords": [
     "config",
