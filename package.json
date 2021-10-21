@@ -81,11 +81,5 @@
   },
   "devDependencies": {
     "core-commons": "^1.0.0-alpha.1"
-  },
-  "@lifion/core-commons": {
-    "autoDocs": false,
-    "template": "public",
-    "updated": "2019-11-11T21:11:42.541Z",
-    "version": "2.3.4"
   }
 }
