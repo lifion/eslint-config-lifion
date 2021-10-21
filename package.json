@@ -80,6 +80,6 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "core-commons": "^1.0.0-alpha.1"
+    "core-commons": "^1.0.0-alpha.2"
   }
 }
