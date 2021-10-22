@@ -33,4 +33,4 @@ Configure Prettier by adding this to your `.prettierrc` file:
 
 ## License
 
-[MIT](LICENSE)
+[Apache-2.0](LICENSE)

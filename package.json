@@ -11,13 +11,14 @@
     "lifion",
     "styleguide"
   ],
-  "author": "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
+  "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
   "maintainers": [
-    "Bryan Oemler <Bryan.Oemler@ADP.com>",
-    "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
+    "Anson Lam <Anson.Lam@ADP.com>",
+    "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
     "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
   ],
   "contributors": [
+    "Bryan Oemler <oemlerb@gmail.com>",
     "Chen Doron <Chen.Doron@ADP.com>"
   ],
   "license": "MIT",
@@ -35,7 +36,7 @@
     "!**/*.test.js"
   ],
   "engines": {
-    "node": ">=12.10.0"
+    "node": ">=14.18.1"
   },
   "scripts": {
     "build-docs": "commons",
