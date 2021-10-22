@@ -57,7 +57,7 @@
     "eslint-plugin-array-func": "^3.1.7",
     "eslint-plugin-es6-recommended": "^0.1.2",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-markdown": "^2.2.1",
@@ -74,13 +74,13 @@
     "eslint-plugin-sort-destructure-keys": "^1.3.5",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^36.0.0"
+    "eslint-plugin-unicorn": "^37.0.1"
   },
   "peerDependencies": {
     "eslint": "^7.19.0",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "core-commons": "^1.0.0-alpha.2"
+    "core-commons": "^1.0.0-alpha.3"
   }
 }
