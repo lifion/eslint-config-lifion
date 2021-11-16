@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.15.8",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-array-func": "^3.1.7",
     "eslint-plugin-es6-recommended": "^0.1.2",
