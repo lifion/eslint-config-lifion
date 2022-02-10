@@ -1,6 +1,0 @@
-.DS_Store
-.idea
-.nova
-.vscode
-/coverage
-node_modules

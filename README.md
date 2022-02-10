@@ -1,6 +1,6 @@
 # eslint-config-lifion
 
-[![npm version](https://badge.fury.io/js/eslint-config-lifion.svg)](http://badge.fury.io/js/eslint-config-lifion)
+[![npm version](https://badge.fury.io/js/eslint-config-lifion.svg)](http://badge.fury.io/js/eslint-config-lifion) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 This package provides Lifion's base JS .eslintrc as an extensible shared config.
 
@@ -33,4 +33,4 @@ Configure Prettier by adding this to your `.prettierrc` file:
 
 ## License
 
-[MIT](LICENSE)
+[Apache-2.0](LICENSE)

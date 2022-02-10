@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lifion",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "Lifion's ESLint config",
   "keywords": [
     "config",
@@ -11,16 +11,18 @@
     "lifion",
     "styleguide"
   ],
-  "author": "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
+  "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
   "maintainers": [
-    "Bryan Oemler <Bryan.Oemler@ADP.com>",
-    "Edgardo Avilés <Edgardo.Aviles@ADP.com>",
-    "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
+    "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
+    "Jenny Eckstein <Jenny.Eckstein@ADP.com>",
+    "Jiaxi Wang <Jiaxi.Wang@ADP.com>"
   ],
   "contributors": [
+    "Anson Lam <Anson.Lam@ADP.com>",
+    "Bryan Oemler <oemlerb@gmail.com>",
     "Chen Doron <Chen.Doron@ADP.com>"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/lifion/eslint-config-lifion.git"
@@ -30,28 +32,34 @@
   },
   "homepage": "https://github.com/lifion/eslint-config-lifion#readme",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "!**/*.test.js"
+  ],
   "engines": {
-    "node": ">=12.10.0"
+    "node": ">=14.18.1"
   },
   "scripts": {
-    "eslint": "eslint . --ext .js,.json,.md --ignore-pattern='!.*.*'",
-    "format": "prettier --write . '!coverage'",
-    "prepare": "husky install",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
-    "test": "jest -c ./.jest.json",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "build-docs": "commons",
+    "build-types": "commons",
+    "check-types": "commons",
+    "clean-types": "commons",
+    "eslint": "commons",
+    "prepare": "commons",
+    "prepublishOnly": "npm run build-types && npm run prettier",
+    "prettier": "commons",
+    "test": "commons",
+    "version": "commons"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.15.8",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-array-func": "^3.1.7",
     "eslint-plugin-es6-recommended": "^0.1.2",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jest": "^24.7.0",
-    "eslint-plugin-jsdoc": "^36.1.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.0",
+    "eslint-plugin-jsdoc": "^37.8.2",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-no-constructor-bind": "^2.0.4",
@@ -60,34 +68,22 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-optimize-regex": "^1.2.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-radar": "^0.2.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-unicorn": "^36.0.0"
+    "eslint-plugin-unicorn": "^40.1.0"
   },
   "peerDependencies": {
-    "eslint": "^7.19.0",
-    "prettier": "^2.2.1"
+    "eslint": "^8.8.0",
+    "prettier": "^2.5.1"
   },
   "devDependencies": {
-    "auto-changelog": "^2.3.0",
-    "check-engines": "^1.5.0",
-    "codecov": "^3.8.3",
-    "eslint": "^7.32.0",
-    "husky": "^7.0.2",
-    "jest": "^27.3.1",
-    "lint-staged": "^11.2.3",
-    "pinst": "^2.1.6",
-    "prettier": "^2.4.1"
-  },
-  "@lifion/core-commons": {
-    "autoDocs": false,
-    "template": "public",
-    "updated": "2019-11-11T21:11:42.541Z",
-    "version": "2.3.4"
+    "core-commons": "^1.0.0-alpha.3",
+    "eslint": "^8.8.0",
+    "prettier": "^2.5.1"
   }
 }
