@@ -79,11 +79,11 @@
   },
   "peerDependencies": {
     "eslint": "^8.13.0",
-    "prettier": "^2.6.2"
+    "prettier": "^3.0.1"
   },
   "devDependencies": {
     "core-commons": "^1.0.0-alpha.5",
     "eslint": "^8.13.0",
-    "prettier": "^2.6.2"
+    "prettier": "^3.0.1"
   }
 }
